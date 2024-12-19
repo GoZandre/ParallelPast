@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d25a6f439299d914187f6972e7e70775, type: 3}
+  m_Name: InputDatas_01
+  m_EditorClassIdentifier: 
+  _errorSprite: {fileID: 21300000, guid: 65f0e363b74cf5845ab8c3fbc14f39ac, type: 3}
+  _xBoxNorthButton: {fileID: 21300000, guid: 042ebb105733da04d860b1292425b3c4, type: 3}
+  _xBoxSouthButton: {fileID: 21300000, guid: 3a15f06461c33e944ab1c929feab0496, type: 3}
+  _xBoxEastButton: {fileID: 21300000, guid: 603dbb3f4e5daa64d835aa847e507867, type: 3}
+  _xBoxWestButton: {fileID: 21300000, guid: 32e0f78d56458ec4f9574194e5836a37, type: 3}
+  _ps4NorthButton: {fileID: 21300000, guid: 87a43bade114944418b4d1b1d4e66554, type: 3}
+  _ps4SouthButton: {fileID: 21300000, guid: b05bb537a68d7894ca425ffb890431f3, type: 3}
+  _ps4EastButton: {fileID: 21300000, guid: 3012e8cb65996d64281baf8be3ba61c6, type: 3}
+  _ps4WestButton: {fileID: 21300000, guid: 610c90ade3f27c44297b2e35980ad0a9, type: 3}
+  _pcNorthButton: {fileID: 21300000, guid: 70e3ce8ad01f39248a3ea97a35bcf238, type: 3}
+  _pcSouthButton: {fileID: 21300000, guid: 626b9cddb29049e4cac50cd87b419945, type: 3}
+  _pcEastButton: {fileID: 21300000, guid: 626b9cddb29049e4cac50cd87b419945, type: 3}
+  _pcWestButton: {fileID: 21300000, guid: 626b9cddb29049e4cac50cd87b419945, type: 3}

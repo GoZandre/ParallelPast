@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64575c8ddec64d44d96a340f373d8f1b, type: 3}
+  m_Name: VampirePower
+  m_EditorClassIdentifier: 
+  _powerAnimator: {fileID: 9100000, guid: af4fe68b8f4ecc64e8a49908ca9fb59a, type: 2}
+  _scarfSprite: {fileID: 2800000, guid: eaf1b9e22a6edf34eb4afdb9a2606c54, type: 3}
+  _scarfParticleColorA: {r: 0.6221407, g: 0, b: 0.764151, a: 1}
+  DebugHeight: 0
+  _powerIcon: {fileID: 21300000, guid: 1f7e7cc5b69fdf24db80956c48c37995, type: 3}
+  _skullHeadPrefab: {fileID: 7106661932510050617, guid: 97d44d75497537c4b948f0374e742ecf, type: 3}

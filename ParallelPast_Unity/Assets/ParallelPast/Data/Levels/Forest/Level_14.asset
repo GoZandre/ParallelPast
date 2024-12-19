@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c96d435e0efbb4d479141a91abbee018, type: 3}
+  m_Name: Level_14
+  m_EditorClassIdentifier: 
+  _levelNumber: 14
+  _levelName: I'm king of the world!
+  _levelSubName: 
+  _levelMaxGhost: 2
+  _levelCountdown: 3
+  _isPremiumLevel: 1
+  _levelScreenshot: {fileID: 21300000, guid: c4f4b534dc08b784fb79487e12c779e7, type: 3}
+  _neededLevelToUnlock:
+  - {fileID: 11400000, guid: 438cad2eae5556f4caa595977a4d6733, type: 2}
+  - {fileID: 11400000, guid: d7029af6fe6c1f445936ad7f31a5a7e0, type: 2}
+  - {fileID: 11400000, guid: 44f4f264959478a4d800d0f66024c2fc, type: 2}
+  - {fileID: 11400000, guid: 9a01f6dad1a6703409b720716e657f60, type: 2}
+  _isInclusive: 0
+  _transitionType: {fileID: 11400000, guid: c9f5eabe4827fb64299b7b509a085396, type: 2}
+  _noGhostActive: 0
+  _noTimerActive: 0
+  _noLightActive: 0
+  _musicName: ForestMusic
+  _ambientSoundName: ForestDayAmb

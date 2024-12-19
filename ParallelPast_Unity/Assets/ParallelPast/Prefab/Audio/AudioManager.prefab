@@ -1,0 +1,149 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7498568683699081462
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7498568683699081456}
+  - component: {fileID: 7498568683699081457}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7498568683699081456
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7498568683699081462}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.601367, y: 1.0454446, z: -0.715539}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7498568683699081457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7498568683699081462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050e50ce73fb5b841b8d0eda1deaceb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sounds:
+  - name: MenuMusic
+    clip: {fileID: 8300000, guid: 40aed290133857c4aa706cdf0d8563d8, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: GameMusic
+    clip: {fileID: 8300000, guid: 5fbe8bb92c0f56145918bee3ae10079c, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: MenuButton
+    clip: {fileID: 8300000, guid: 7c11dbe3f2a1efe49acf4b1bb084671e, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: SmallButton
+    clip: {fileID: 8300000, guid: 7c11dbe3f2a1efe49acf4b1bb084671e, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: StartLevel
+    clip: {fileID: 8300000, guid: a5679c2992a97154e8920b5e6b052758, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: LeverOn
+    clip: {fileID: 8300000, guid: 687fbd178473c184a86ad0820cd844be, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: LeverOff
+    clip: {fileID: 8300000, guid: 6eccb56a7f7406643ad946a42d470e7c, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: OpenDoor
+    clip: {fileID: 8300000, guid: baeb099362de19e45b1791ea16ae6d32, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: OnWin
+    clip: {fileID: 8300000, guid: f0c2d92f67b40fe4298b514dba020a68, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: OnLose
+    clip: {fileID: 8300000, guid: f97a49dc1c3eec34891c6d666743df31, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Jump
+    clip: {fileID: 8300000, guid: da45098ba3af0d4438489cbd664fc918, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: BreakFloor
+    clip: {fileID: 8300000, guid: 9717020df2d39504da8366e445884ec7, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Elevator
+    clip: {fileID: 8300000, guid: 034397f122128e44486e2204d9e31c82, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Hit
+    clip: {fileID: 8300000, guid: 9717020df2d39504da8366e445884ec7, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: PadLock
+    clip: {fileID: 8300000, guid: 7fc5af913d3b0ad4db1dea61e1f9218e, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: GetKey
+    clip: {fileID: 8300000, guid: 8f0c890053406a945804f025e157ae0b, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: GateOpen
+    clip: {fileID: 8300000, guid: 320454b57507c2a45a3f8beb86053e82, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}

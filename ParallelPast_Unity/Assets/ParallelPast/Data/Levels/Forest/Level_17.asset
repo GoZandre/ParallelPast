@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c96d435e0efbb4d479141a91abbee018, type: 3}
+  m_Name: Level_17
+  m_EditorClassIdentifier: 
+  _levelNumber: 17
+  _levelName: "I'll be back\u2026 for me."
+  _levelSubName: 
+  _levelMaxGhost: 2
+  _levelCountdown: 5
+  _isPremiumLevel: 1
+  _levelScreenshot: {fileID: 21300000, guid: 7b54755c655abb44c82f9f62d767619d, type: 3}
+  _neededLevelToUnlock:
+  - {fileID: 11400000, guid: 9ba12a97374952747ae55995d2f98706, type: 2}
+  - {fileID: 11400000, guid: 3f485d02e5094704fa64e4e7f7a9923f, type: 2}
+  _isInclusive: 0
+  _transitionType: {fileID: 11400000, guid: c9f5eabe4827fb64299b7b509a085396, type: 2}
+  _noGhostActive: 0
+  _noTimerActive: 0
+  _noLightActive: 0
+  _musicName: ForestMusic
+  _ambientSoundName: ForestDayAmb

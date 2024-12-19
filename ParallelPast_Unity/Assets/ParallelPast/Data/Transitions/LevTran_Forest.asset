@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4a5a82af4114db469f5fd4107fe282e, type: 3}
+  m_Name: LevTran_Forest
+  m_EditorClassIdentifier: 
+  _transitionName: Forest
+  _transitionMaterial: {fileID: 2100000, guid: af980a8f64bb15847a1e72973f3a9e82, type: 2}
+  _transitionColor: {r: 0.27450982, g: 0.24705882, b: 0.03529412, a: 1}
+  _transitionTextColor: {r: 0.4, g: 0.36862746, b: 0.10980392, a: 1}
