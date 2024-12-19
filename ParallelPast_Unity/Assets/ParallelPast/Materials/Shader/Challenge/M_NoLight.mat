@@ -45,7 +45,7 @@ Material:
     - _QueueOffset: 0
     - _ScaleRatio: 8
     m_Colors:
-    - _WorldPosition: {r: 4.3604774, g: -2.994991, b: 0.05292225, a: 0}
+    - _WorldPosition: {r: 8.062882, g: -1.994998, b: 0.05292225, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &3652448412338952123
 MonoBehaviour:
