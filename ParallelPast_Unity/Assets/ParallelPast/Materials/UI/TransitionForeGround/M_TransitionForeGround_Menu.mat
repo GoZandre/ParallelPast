@@ -69,6 +69,6 @@ Material:
     - _ScreenParams_x: 0
     - _ScreenParams_y: 0
     - _ScreenRatio: 1.777778
-    - _TransitionValue: 0
+    - _TransitionValue: 0.3303923
     m_Colors: []
   m_BuildTextureStacks: []

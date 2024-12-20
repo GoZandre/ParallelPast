@@ -37,9 +37,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Angle: 17.9
-    - _LightStrength: 2
-    - _OuterScale: 0.71
+    - _Angle: -20
+    - _LightStrength: 7.7
+    - _OuterScale: 0.66
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:

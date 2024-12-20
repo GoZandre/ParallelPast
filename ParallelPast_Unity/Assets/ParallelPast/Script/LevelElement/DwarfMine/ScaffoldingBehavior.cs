@@ -49,6 +49,9 @@ public class ScaffoldingBehavior : MonoBehaviour
     [SerializeField]
     private float _delayBeforeUnactivation;
 
+    [SerializeField]
+    private bool _collisionEnableOnRetracted = true;
+
     [Header("Collsions")]
     [SerializeField]
     private float _activateColliderYScale;
@@ -72,6 +75,13 @@ public class ScaffoldingBehavior : MonoBehaviour
         {
             _lerpValue = 0f;
             _scaffoldingTransform.position = _scaffoldingOrigin;
+        }
+
+        if (!_collisionEnableOnRetracted)
+        {
+            float YSize = Mathf.Lerp(0.5f, _activateColliderYScale, _activeMovementCurve.Evaluate(_lerpValue));
+            _colliderMovement.size = new Vector2(_colliderMovement.size.x, YSize);
+            _colliderMovement.offset = new Vector2(_colliderMovement.offset.x, (YSize * -1f) - 0.1f);
         }
     }
 
@@ -137,14 +147,18 @@ public class ScaffoldingBehavior : MonoBehaviour
 
     public void SetColliderSizeActivation(bool active)
     {
-        if (active)
+        if (_collisionEnableOnRetracted)
         {
-            _colliderMovement.size = new Vector2(_colliderMovement.size.x, _activateColliderYScale);
+            if (active)
+            {
+                _colliderMovement.size = new Vector2(_colliderMovement.size.x, _activateColliderYScale);
+            }
+            else
+            {
+                _colliderMovement.size = new Vector2(_colliderMovement.size.x, _deactivateColliderYScale);
+            }
         }
-        else
-        {
-            _colliderMovement.size = new Vector2(_colliderMovement.size.x, _deactivateColliderYScale);
-        }
+        
     }
 
     private float _lerpValue;
@@ -174,6 +188,7 @@ public class ScaffoldingBehavior : MonoBehaviour
                 if (RaycastCenter && RaycastLeft && RaycastRight)
                 {
                     Vector3 currentLocation = Vector3.Lerp(_scaffoldingOrigin, _scaffoldingObjective, _activeMovementCurve.Evaluate(_lerpValue));
+                    float YSize = Mathf.Lerp(0.5f, _activateColliderYScale, _activeMovementCurve.Evaluate(_lerpValue));
 
                     if (_movementAxe == MovementAxe.Vertical)
                     {
@@ -186,6 +201,12 @@ public class ScaffoldingBehavior : MonoBehaviour
 
                     _lerpValue += _movementSpeed * Time.deltaTime;
                     _scaffoldingTransform.position = currentLocation;
+
+                    if (!_collisionEnableOnRetracted)
+                    {
+                        _colliderMovement.size = new Vector2(_colliderMovement.size.x, YSize);
+                        _colliderMovement.offset = new Vector2(_colliderMovement.offset.x, (YSize * -.5f) - 0.1f);
+                    }
                 }
             }
             else
@@ -199,6 +220,7 @@ public class ScaffoldingBehavior : MonoBehaviour
             if (_lerpValue > 0f)
             {
                 Vector3 currentLocation = Vector3.Lerp(_scaffoldingOrigin, _scaffoldingObjective, _desactiveMovementCurve.Evaluate(_lerpValue));
+                float YSize = Mathf.Lerp(0.5f, _activateColliderYScale, _activeMovementCurve.Evaluate(_lerpValue));
 
                 if (_movementAxe == MovementAxe.Vertical)
                 {
@@ -211,6 +233,12 @@ public class ScaffoldingBehavior : MonoBehaviour
 
                 _lerpValue -= _movementSpeed * Time.deltaTime;
                 _scaffoldingTransform.position = currentLocation;
+
+                if (!_collisionEnableOnRetracted)
+                {
+                    _colliderMovement.size = new Vector2(_colliderMovement.size.x, YSize);
+                    _colliderMovement.offset = new Vector2(_colliderMovement.offset.x, (YSize * -.5f) - 0.1f);
+                }
             }
             else
             {

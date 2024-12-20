@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5195631120629624271}
   - component: {fileID: 5195631120629624268}
   - component: {fileID: 5195631120629624265}
+  - component: {fileID: 6189970903470521170}
   m_Layer: 0
   m_Name: InteractionIndication
   m_TagString: Untagged
@@ -54,7 +55,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -75,8 +76,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 50
-  m_Sprite: {fileID: 21300000, guid: 8cc015afdf3653243a98e5f8f6dcfe25, type: 3}
-  m_Color: {r: 0.99215686, g: 0.78431374, b: 0.3764706, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 32e0f78d56458ec4f9574194e5836a37, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -119,3 +120,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e84b1f69f0beaa48bac3882ebd85706, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6189970903470521170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5195631120629624269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c6d6013da934142b01097e9ce1d3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onControllerXbox:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5195631120629624271}
+        m_TargetAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
+        m_MethodName: set_sprite
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 21300000, guid: 32e0f78d56458ec4f9574194e5836a37, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onControllerPs5:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5195631120629624271}
+        m_TargetAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
+        m_MethodName: set_sprite
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 21300000, guid: 610c90ade3f27c44297b2e35980ad0a9, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onKeyboard:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5195631120629624271}
+        m_TargetAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
+        m_MethodName: set_sprite
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 21300000, guid: cbbcababb56fc58448821c824f3d988c, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
